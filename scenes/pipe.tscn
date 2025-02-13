@@ -22,34 +22,41 @@ size = Vector2(20, 198)
 script = ExtResource("1_i8p56")
 
 [node name="Lower" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
 texture = ExtResource("2_jcmtj")
 offset = Vector2(0, 380)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 118)
+position = Vector2(0, 237)
+scale = Vector2(2, 2)
 shape = SubResource("RectangleShape2D_rnnky")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(0, 398)
+position = Vector2(0, 796)
+scale = Vector2(2, 2)
 shape = SubResource("RectangleShape2D_6a0s2")
 
 [node name="Upper" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
 texture = ExtResource("2_jcmtj")
 offset = Vector2(0, -380)
 flip_v = true
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
-position = Vector2(0, -118)
+position = Vector2(0, -237)
+scale = Vector2(2, 2)
 shape = SubResource("RectangleShape2D_h5r4x")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
-position = Vector2(0, -398)
+position = Vector2(0, -796)
+scale = Vector2(2, 2)
 shape = SubResource("RectangleShape2D_0wuvw")
 
 [node name="ScoreArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ScoreArea"]
 position = Vector2(59, 1)
+scale = Vector2(2, 2)
 shape = SubResource("RectangleShape2D_51tso")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
